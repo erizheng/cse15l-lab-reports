@@ -2,5 +2,5 @@
 # Hello World!
 
 ---
-[Next Page](https://erizheng.github.io/cse15l-lab-reports/)
+[Next Page](https://erizheng.github.io/cse15l-lab-reports/index2.html)
 
