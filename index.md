@@ -2,4 +2,5 @@
 # Hello World!
 
 ---
-`I don't know what to put`
+[Next Page](https://erizheng.github.io/cse15l-lab-reports/)
+
