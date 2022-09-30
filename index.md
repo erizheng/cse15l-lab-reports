@@ -1,8 +1,7 @@
 ## Eric Zheng
-# Hello World!
-
 ---
 [About me](https://erizheng.github.io/cse15l-lab-reports/index2.html)
 
-[Lab Report 1](lab-report-1-week-0.md)
+[`Lab Report 0`](lab-report-0-week-0.md)
+[`Lab Report 1`](lab-report-1-week-1.md)
 
