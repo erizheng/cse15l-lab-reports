@@ -4,15 +4,15 @@ ______
 [VScode](https://code.visualstudio.com/)   
 Follow the link above to install VScode. 
 
-![Test Image 1](images/vscode_download.png)
+![Test Image 1](images1/vscode_download.png)
 <br>After clicking the link, it should bring you to a page similar to this which you will then click on "Download Mac Universal" or the dropdown next to it for other options.
 
-<br>![Test Image 2](images/vscode_zip.png)
+<br>![Test Image 2](images1/vscode_zip.png)
 <br>After the file has download, click on the zip file for it to fully install.
 
 <br>Once VScode has finish installing, you should open the application and it should look like this.
 
-<br>![Test Image 3](images/vscode_open.png)
+<br>![Test Image 3](images1/vscode_open.png)
 
 # 2. Remotely Connecting
 <br>Remote connecting is a way to access remote server through the internet to access other OS, files, or programs that are not accessible from your personal computer.
@@ -21,11 +21,11 @@ Follow the link above to install VScode.
 <br>To begin you need to open the terminal in VScode(Ctrl or Command + \`, or use the Terminal → New Terminal menu option)
 In the terminal you will type in - `ssh (username)@ieng6.ucsd.edu`
 
-<br>![ssh1](images/ssh_step1.png)
+<br>![ssh1](images1/ssh_step1.png)
 
 <br>After entering the `ssh` in the terminal you will be prompted to enter a *password* (which will not show a response)
 
-<br>![ssh2](images/ssh_step2.png)
+<br>![ssh2](images1/ssh_step2.png)
 
 # 3. Trying Some Commands
 <br>There are many useful commands we can run in the terminal. Some very useful ones are:
@@ -36,14 +36,14 @@ In the terminal you will type in - `ssh (username)@ieng6.ucsd.edu`
 - cat (file): prints the contents of a file
 - cp (file) (path): copies a file(not secure)
 
-<br>![try](images/try.png)
+<br>![try](images1/try.png)
 
 # 4. Moving Files with scp
 <br>Other than accessing remote servers with `ssh`, you can also copy files from your device to the remote device. This can be accomplished through `scp` or "secure copy protocol"
 <br>In the terminal you will type in - `scp (filename) (username)@ieng6.ucsd.edu`
 <br>After entering the *scp* in the terminal you will be prompted to enter a *password* just like `ssh` and after the information has been submitted you will need to enter the remote server again through `ssh` to access the file you just copied
 
-<br>![scp](images/scp.png)
+<br>![scp](images1/scp.png)
 
 <br>As seen from the example above I ran `javac` and `java` for "WhereAmI.java" showing my directory information. Then after the "WhereAmI.java" has been copied to the remote server, I logged in again through `ssh` and ran `javac` and `java` for "WhereAmI.java" showing different results suggesting the terminal runs commands based on where the command is ran resulting in different outputs from remote and local computers. 
 
@@ -51,7 +51,7 @@ In the terminal you will type in - `ssh (username)@ieng6.ucsd.edu`
 <br>As you seen before, it consumes time to use *ssh* and *scp* because the need to type in a password. However, that can be avoid by setting up an SSH Key for your computer so you won't need to type in a password everytime you access the remote server.
 <br>To start you will enter `ssh-keygen` into the terminal, which you will be prompted by some text but you just need to press *enter* all the way through
 
-<br>![key](images/ssh_keychart.png)
+<br>![key](images1/ssh_keychart.png)
 
 <br>The result will look something like this and you will know it is completely after the image chart is produced.
 <br>If you are on windows please you can follow [these](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation) steps.
@@ -59,7 +59,7 @@ In the terminal you will type in - `ssh (username)@ieng6.ucsd.edu`
 <br>The next step is to log into the remote server with `ssh`
 <br>After you are on the server, enter `mkdir .ssh` in the terminal then log out by typing `exit` in the terminal
 
-<br>![key2](images/ssh_key.png)
+<br>![key2](images1/ssh_key.png)
 
 <br>You will then need to `scp` the "public key" given to you after you entered `ssh-keygen` (remember the public key, not the private)
 
@@ -67,7 +67,7 @@ In the terminal you will type in - `ssh (username)@ieng6.ucsd.edu`
 
 <br>After that is completed, the next time you *ssh* or `scp` into this remote server, there wouldn't be a prompted password
 
-<br>![nopass](images/nopass.png)
+<br>![nopass](images1/nopass.png)
 
 # 6. Optimizing Remote Running
 <br>Something to consider while coding is optimization, and this can be succeeded through the reduction of keystrokes. For example:
@@ -76,6 +76,6 @@ In the terminal you will type in - `ssh (username)@ieng6.ucsd.edu`
 
 <br>`scp WhereAmI.java (username)@ieng6.ucsd.edu:~/; ssh (username)@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"`
 
-<br>![opti](images/opti.png)
+<br>![opti](images1/opti.png)
 <br>This example shows the use of `;` and `""` where right after the use of `scp`, `ssh` is also ran with `javac` and `java` inside the quotes.
 
