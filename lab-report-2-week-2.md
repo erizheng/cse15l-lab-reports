@@ -77,6 +77,8 @@ class SearchEngine {
 
 # Part 2- Week 3 Lab
 
+<br>*Symptoms and Failure-inducing Inputs* Lab 3
+
 >From ListExamples.java
 ```
 static List<String> filter(List<String> list, StringChecker sc) {
@@ -101,14 +103,14 @@ static List<String> filter(List<String> list, StringChecker sc) {
    }
 
 ```
-<br>Failure-inducing input
+<br>**Failure-inducing input**
 
 <br>![ListSymp](images3/ListSymp.png)
-<br>Sympton
+<br>**Sympton**
 
 The incorrect output presented in the terminal where the expected value was "<th[is]thing>" but resulted in "<th[at]thing>", showing that the order of the list is incorrect. 
 
-<br>The Bug
+<br>**The Bug**
 
  The bug in the code is its use of add where it adds the string that passes the StringChecker to the 0 index causing the result to be backwards even though it has all the correct strings filtered through. 
  
@@ -168,13 +170,13 @@ static List<String> filter(List<String> list, StringChecker sc) {
    }
 
 ```
-<br>Failure-inducing input
+<br>**Failure-inducing input**
 <br>![LinkedListSymp](images3/LinkedSymp.png)
-<br>Sympton
+<br>**Sympton**
 
 The symptoms resulted in the test failed for the append() method because the append() method adds a new Node constantly when there is more than one Node in the LinkedList already. This doesn't stop causing the heap to run out of memory. 
 
-<br>The Bug
+<br>**The Bug**
 
  The bug in the code is the while condition it has where it will run continuously while “n.next != null” and “n.next = new Node(value, null);”, which adds the Node in the while loop when it is supposed to be after the loop after the method has iterated through tall the Nodes in the list. This causes the next node to constantly have n."next=null" which makes the method run continuously. 
 
