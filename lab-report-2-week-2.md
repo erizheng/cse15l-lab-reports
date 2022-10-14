@@ -200,7 +200,12 @@ public void append(int value) {
         while(n.next != null) {
             n = n.next;
         }
-        n.next = new Node(value, null);//This line of code was originally in the while loop and needed to be moved out so when the while loop ends, this can be added to the end of the LinkedList insted of constantly adding causing a never ending loop.
+        n.next = new Node(value, null);//This line of code was originally in 
+                                        //the while loop and needed to be moved 
+                                        //out so when the while loop ends, this can 
+                                        //be added to the end of the LinkedList 
+                                        //insted of constantly adding causing a never 
+                                        //ending loop.
     }
   ```
 
