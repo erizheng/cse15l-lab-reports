@@ -4,7 +4,8 @@ ______
 
 <br>*Simple Search Engine* Lab 2
 
-```
+
+```java
 import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
@@ -53,6 +54,7 @@ class SearchEngine {
     }
 }
 ```
+
 <br>This is a simple Search Engine implemented through a local web browser that supports paths for *adding* new strings to list and *querying* the list to return certain values.
 
 <br>![SearchEngine1](images2/searchEngine1.png)
@@ -80,7 +82,7 @@ class SearchEngine {
 <br>*Symptoms and Failure-inducing Inputs* Lab 3
 
 >From ListExamples.java
-```
+```java
 static List<String> filter(List<String> list, StringChecker sc) {
     List<String> result = new ArrayList<>();
     for(String s: list) {
@@ -93,7 +95,7 @@ static List<String> filter(List<String> list, StringChecker sc) {
   ```
 <br>Original Method Code
 
-```
+```java
 @Test
    public void testFilter4(){
        List<String> input = new ArrayList<String>(Arrays.asList("thisthing", "thatthing"));
@@ -117,7 +119,7 @@ The incorrect output presented in the terminal where the expected value was "<th
  For example and Array ["one", "two", "three"] would result in ["two", "one"] with the StringChecker who checks if the String contains the vowel "o" instead of of resturning ["one", "two"].
 
  The correct code should be 
-```
+```java
 static List<String> filter(List<String> list, StringChecker sc) {
     List<String> result = new ArrayList<>();
     for(String s: list) {
@@ -133,7 +135,7 @@ static List<String> filter(List<String> list, StringChecker sc) {
 
 
   >From LinkedList.java
-  ```
+  ```java
   public void append(int value) {
         if(this.root == null) {
             this.root = new Node(value, null);
@@ -154,7 +156,7 @@ static List<String> filter(List<String> list, StringChecker sc) {
   ```
 <br>Original Method Code
 
-```
+```java
 @Test
    @Test
    public void testAppend(){
@@ -182,7 +184,7 @@ The symptoms resulted in the test failed for the append() method because the app
 
 
  The correct code should be 
-```
+```java
 public void append(int value) {
         if(this.root == null) {
             this.root = new Node(value, null);
