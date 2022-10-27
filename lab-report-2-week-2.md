@@ -59,23 +59,23 @@ class SearchEngine {
 
 <br>![SearchEngine1](images2/searchEngine1.png)
 
-<br>This instance calls the `handleRequest(URI url)` method with the relavant argument of *add* and *s* which then adds "apple" to an ArrayList. 
+<br>This instance calls the `handleRequest(URI url)` method with the relavant argument of the URI *url* which then calls the getPath() method to check the path that exits in the url. Then if it finds the keyword *add* or *search* within the url(this case being *add*), it will split the url at "=" then take the the argument after the "=" as the String to add which is "apple" to an ArrayList. 
 
 <br>![SearchEngine2](images2/searchEngine2.png)
 
-<br>This instance calls the `handleRequest(URI url)` method with the relavant argument of *add* and *s* which then adds "pineapple" to an ArrayList. 
+<br>This instance also calls the `handleRequest(URI url)` method with the relavant argument of the URI *url* which then calls the getPath() method to check the path that exits in the url. If the keyword *add* is within the path, it will split the url at "=" then take the the argument after the "="  which is "pineapple" and add it to an ArrayList. 
 
 <br>![SearchEngine3](images2/searchEngine3.png)
 
-<br>This instance calls the `handleRequest(URI url)` method with the relavant argument of *add* and *s* which then adds "pie" to an ArrayList. 
+<br>Similarly to the previous two, this also calls the `handleRequest(URI url)` method with the relavant argument of *url* and found that *add* was within its path. The only difference is it adds "pie" to an ArrayList. 
 
 <br>Before everything the main method is called which looks for a valid *port* and starts the local server. 
 
-<br>As seen these three instances uses the add method which calls `handleRequest(URI url)` method which it looks for the keyword *add* and *s* then adds them to an ArrayList. The *s* value allows the program to know when to parse the String so it determines where the String that need to be added is. 
+<br>As seen these three instances uses the add method which calls `handleRequest(URI url)` method which if it finds the keyword *add* it will then split the path of the url at "=" then add the String after it to the ArrayList. The *s* value allows the program to know when to parse the String so it determines where the String that need to be added is. 
 
 <br>![SearchEngine3](images2/searchEngine4.png)
 
-<br>This instance here uses the search engine which calls the `handleRequest(URI url)` method as well but looks for a different keyword *search* and *s* which then it will query through the ArrayList created from *add* and return the values that is true to the query, in this case are Strings that contains "apple" within them. If the *s* argument were to be change for say "pie" then it will only print one value of "pie". 
+<br>This instance here uses the search engine which calls the `handleRequest(URI url)` method as well but if it finds a different keyword *search* then it will split the path of the url at "=" and if it finds another keyword *s* exist. Which it will take the String after the "=" to use as the query argument which will query through the previous created ArrayList from *add* and return the value that is true to the query. In this case it finds Strings that contains "apple" within them. If the *s* argument were to be change for say "pie" then it will only print one value of "pie". 
 
 # Part 2- Week 3 Lab
 
