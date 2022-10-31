@@ -1,24 +1,25 @@
 ## Lab Report 3
 ______
 
-# *grep* command
+# *grep* commands
 
-> grep -l
-<br>Example 1
+1. grep -l
+
+>Example 1
 ```
 grep -l "dance" technical/911report/* > files.txt 
 ```
 <br>This use of grep -l looks for a key word "dance" within all the file in the directory technical/911report/ then prints out the files containing the word.
 <br>![grep1](images4/grep1.png)
 
-<br>Example 2
+>Example 2
 ```
 grep -l "the mitochondria" technical/biomed/* > files.txt
 ```
 <br>This use of grep -l looks for a key phrase "the mitochondria" within all the file in the directory technical/biomed/ then prints out the files containing the phrase.
 <br>![grep2](images4/grep2.png)
 
-<br>Example 3
+>Example 3
 ```
 grep -l "baby" technical/plos/* > files.txt
 ```
@@ -29,22 +30,23 @@ grep -l "baby" technical/plos/* > files.txt
 <br>grep -l could be useful because it acts like a google search engine that will return all the files that contains the key word or phrase. Therefore, if you need to find a file that contains certain topic of information then you can use -l to identify the file instead of only lines that have the word. 
 
 
->grep -n
-<br>Example 1
+2. grep -n
+
+>Example 1
 ```
 grep -n "guidance" technical/911report/* > files.txt 
 ```
 <br>This use of grep -n to look for lines that contains the word "guidance" within the files in technical/911report/ directory. It prints out the complete file path, the line number the word is found in, and the line of text. 
 <br>![grep4](images4/grep4.png)
 
-<br>Example 2
+>Example 2
 ```
 grep -n "the mitochondria," technical/biomed/* > files.txt
 ```
 <br>This use of grep -n to look for lines that contains "the mitochondria," within the files in technical/biomed/ directory. It prints out 5 lines with the complete file path along with which line the phrase was found in. 
 <br>![grep5](images4/grep5.png)
 
-<br>Example 3
+>Example 3
 ```
 grep -n "baby" technical/plos/* > files.txt 
 ```
@@ -54,22 +56,23 @@ grep -n "baby" technical/plos/* > files.txt
 <br>**USE**
 This command is useful because it can save time when you are looking through files to find specific information on where the word or phrase is. If this were to be used on a journal or article text then iy can be used to find lines for future citation, or else, it can be applied to easily find out where a certain line of code you remember write is. 
 
->grep -v
-<br>Example 1
+3. grep -v
+
+>Example 1
 ```
 grep -v "the " technical/911report/* > files.txt
 ```
 <br>This line of code using grep -v returned all the lines within the files in the technical/911report/ directory that didn't include "the ".
 <br>![grep7](images4/grep7.png)
 
-<br>Example 2
+>Example 2
 ```
 grep -v "\." technical/biomed/* > files.txt  
 ```
 <br>This use of -v returned the files and line without a period from the technical/biomed/ directory. 
 <br>![grep8](images4/grep8.png)
 
-<br>Example 3
+>Example 3
 ```
 grep -v "baby" technical/plos/* > files.txt
 ```
