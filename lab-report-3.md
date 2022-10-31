@@ -1,9 +1,6 @@
-## Lab Report 3
-______
+# Lab Report 3: *grep* commands
 
-# *grep* commands
-
-1. grep -l
+1. ## grep -l
 
 >Example 1
 ```
@@ -29,8 +26,8 @@ grep -l "baby" technical/plos/* > files.txt
 <br>**USE**
 <br>grep -l could be useful because it acts like a google search engine that will return all the files that contains the key word or phrase. Therefore, if you need to find a file that contains certain topic of information then you can use -l to identify the file instead of only lines that have the word. 
 
-
-2. grep -n
+---
+2. ## grep -n
 
 >Example 1
 ```
@@ -56,7 +53,8 @@ grep -n "baby" technical/plos/* > files.txt
 <br>**USE**
 This command is useful because it can save time when you are looking through files to find specific information on where the word or phrase is. If this were to be used on a journal or article text then iy can be used to find lines for future citation, or else, it can be applied to easily find out where a certain line of code you remember write is. 
 
-3. grep -v
+---
+3. ## grep -v
 
 >Example 1
 ```
