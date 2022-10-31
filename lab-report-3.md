@@ -48,10 +48,10 @@ grep -n "the mitochondria," technical/biomed/* > files.txt
 grep -n "baby" technical/plos/* > files.txt 
 ```
 <br>This code also search for the key word "baby" like for -l but instead of just printing out which file it is in, it printed out the line, line number, and file name. In this case we found that only one line in the one file that conatins the word "baby" has the word "baby".
-<br><img src="images4/grep6.png" alt="drawing" width="500"/>
+<br>![SearchEngine2](images4/grep6.png)
 
 <br>**USE**
-This command is useful because it can save time when you are looking through files to find specific information on where the word or phrase is. If this were to be used on a journal or article text then iy can be used to find lines for future citation, or else, it can be applied to easily find out where a certain line of code you remember write is. 
+<br>This command is useful because it can save time when you are looking through files to find specific information on where the word or phrase is. If this were to be used on a journal or article text then iy can be used to find lines for future citation, or else, it can be applied to easily find out where a certain line of code you remember write is. 
 
 ---
 ## 3. grep -v
@@ -75,7 +75,7 @@ grep -v "\." technical/biomed/* > files.txt
 grep -v "baby" technical/plos/* > files.txt
 ```
 <br>This code that searches throught the technical/plos/ directory returned all the files that did not contain "baby", so it returned everything in plos except one line. 
-<br><img src="images4/grep9.png" alt="drawing" width="500"/>
+<br><img src="images4/grep9.png" alt="drawing" width="600"/>
 
 <br> **USE**
 <br>The grep -v command could be use to filter out what you don't want to see within a text. Many shopping websites have options to filter out certain items and even google has an option to exlcude words by using "-" so this acts in that same way. 
