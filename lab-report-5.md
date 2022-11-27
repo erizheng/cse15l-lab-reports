@@ -52,18 +52,19 @@ fi
 ## Examples
 
 <br>[Correct Methods](https://github.com/ucsd-cse15l-f22/list-methods-corrected)- should compile successfully and receive full points.
+
 <br>![correct](images6/GraderCorrect.png)
 
 <br>[Incorrect Methods](https://github.com/ucsd-cse15l-f22/list-methods-lab3)- should compile successfully but not receive full credit.
-<br>![correct](images6/GraderWrong.png)
+<br>![wrong](images6/GraderWrong.png)
 
 <br>[Compile Error](https://github.com/ucsd-cse15l-f22/list-methods-compile-error)- this program is missing a semi-colon so it will result in a compile error.
-<br>![correct](images6/GraderError.png)
+<br>![error](images6/GraderError.png)
 
 ---
 
 ## Tracing- Incorrect Methods
-<br>![correct](images6/GraderWrong.png)
+<br>![wrong2](images6/GraderWrong.png)
 
 
 <br>To begin, the shell script starts with `set -e` to stop execution so the program can start off in a clean state. `CPATH` is a declared variable that will be used later on in the code. `rm -rf student-submission` will forcefully remove the existing "student-submission" code so that we can grade other students code, which is why it is accompanied by `git clone $1 student-submission` which will clone a student's repository given by `$1` in the terminal. The purpose of these two line is to get rid of old code and copy in new code which the grader will then grade. Then lines 8 and 9 will copy using the `cp` command "TestListExamples.java,"(The test that will be used to grade) and the directory "lib"(Which contains junit and hamcrest) into student-submission. All these lines of code should have a *return code* of 0 because it is the set-up before grading. 
@@ -94,4 +95,5 @@ Lines 29-34 didn't run because there were errors in the methods, but if it did r
 
 <br><img src="images6/trace3.png" alt="drawing" width="500"/>
 <br><img src="images6/trace3/2.png" alt="drawing" width="500"/>
-<br>![correct](images6/Figure1.png)
+**(Figure 1)**
+<br>![figure1](images6/Figure1.png)
