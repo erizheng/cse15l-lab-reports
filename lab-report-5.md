@@ -52,7 +52,6 @@ fi
 ## Examples
 
 <br>[Correct Methods](https://github.com/ucsd-cse15l-f22/list-methods-corrected)- should compile successfully and receive full points.
-
 <br>![correct](images6/GraderCorrect.png)
 
 <br>[Incorrect Methods](https://github.com/ucsd-cse15l-f22/list-methods-lab3)- should compile successfully but not receive full credit.
@@ -95,5 +94,5 @@ Lines 29-34 didn't run because there were errors in the methods, but if it did r
 
 <br><img src="images6/trace3.png" alt="drawing" width="500"/>
 <br><img src="images6/trace3/2.png" alt="drawing" width="500"/>
-**(Figure 1)**
+<br>**(Figure 1)**
 <br>![figure1](images6/Figure1.png)
