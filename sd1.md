@@ -7,15 +7,15 @@
 ---
 <br>**2. Build and run the tests locally, using javac and java (note that bash will not work locally on the Windows machines)**
 
-<br>`javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java`
-<br>`java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore TestDocSearch`
+<br>`javac -cp ".:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar" *.java`
+<br>`java -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore TestDocSearch`
 
 ---
 <br>**3. Fix the broken test (the test is wrong, not the implementation) and rerun locally**
 
 <br>change 10 to 1391
-<br>`javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java`
-<br>`java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore TestDocSearch`
+<br>`javac -cp ".:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar" *.java`
+<br>`java -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore TestDocSearch`
 
 <br>use arrows
 
@@ -40,6 +40,8 @@
 <br>`...@ieng6.ucsd.edu`
 <br>I messed up here the first time, I'm so stupid ugh
 
+<br>`cs15lfa22mr@ieng6.ucsd.edu`
+
 <br>`git clone https://github.com/ucsd-cse15l-f22/skill-demo1`
 
 ---
@@ -48,7 +50,7 @@
 <br>`cd skill-demo1`
 <br>`javac Server.java DocSearchServer.java`
 <br>`java DocSearchServer 4444`
-<br>visit `http://ieng6-202.ucsd.edu:4444/`
+<br>visit `http://ieng6-201.ucsd.edu:4444/`
 
 <br>/search?q=chapter
 
@@ -71,10 +73,16 @@
 <br>**10. Copy the change to the remote ieng6, then build and demonstrate the new behavior there**
 
 <br>`scp DocSearchServer.java ...(given login)@ieng6.ucsd.edu:~/skill-demo1`
+
+<br>`scp DocSearchServer.java cs15lfa22mr@ieng6.ucsd.edu:~/skill-demo1`
+
 <br>`ssh provided-server`
+
+<br>`cs15lfa22mr@ieng6.ucsd.edu`
+
 <br>`cd skill-demo1`
 <br>`javac Server.java DocSearchServer.java`
 <br>`java DocSearchServer 4444`
-<br>visit `http://ieng6-202.ucsd.edu:4444/`
+<br>visit `http://ieng6-201.ucsd.edu:4444/`
 
 <br>/search?q=chapter
